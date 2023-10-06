@@ -1,0 +1,135 @@
+/* landingpage.css */
+
+/* Styles for the entire landing page container */
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+  position: relative; /* Add relative positioning to the container */
+}
+
+/* Heading style */
+h2 {
+  color: #333;
+}
+
+/* Styles for the table */
+.meter-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for table headers */
+.meter-table th {
+  padding: 12px;
+  text-align: left;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Styles for sorting icons in headers */
+.sort-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+}
+
+.sort-icon.ascending::before {
+  content: "▲";
+}
+
+.sort-icon.descending::before {
+  content: "▼";
+}
+
+/* Styles for table data rows */
+.meter-table td {
+  padding: 12px;
+  text-align: left;
+}
+
+/* Styles for even-numbered rows (for alternating row colors) */
+.meter-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Hover effect for table rows */
+.meter-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+/* Button styles */
+.delete-button,
+.update-button {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 10px; /* Add space between buttons */
+}
+
+.delete-button {
+  background-color: #ff5733;
+}
+
+.delete-button:hover {
+  background-color: #d03925;
+}
+
+.update-button {
+  background-color: #0074d9;
+}
+
+.update-button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for the Create Meter button */
+.create-meter-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  position: absolute; /* Use absolute positioning */
+  top: 0px; /* Adjust top position as needed */
+  right: 10px; /* Adjust right position as needed */
+}
+
+.create-meter-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .create-meter-button {
+    position: static; /* Reset positioning to default */
+  }
+}
+
+.loader {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #007bff; /* You can change the color as needed */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+/* Create a keyframes animation for spinning */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

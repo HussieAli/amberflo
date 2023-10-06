@@ -1,0 +1,64 @@
+/* App.css */
+
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+.meter-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.meter-table th,
+.meter-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.meter-table th {
+  background-color: #f2f2f2;
+  cursor: pointer;
+  position: relative;
+}
+
+.meter-table th:hover {
+  background-color: #ddd;
+}
+
+.meter-table th span {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+}
+
+.meter-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.meter-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+button {
+  background-color: #0074d9;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

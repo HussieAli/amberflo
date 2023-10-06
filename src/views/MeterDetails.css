@@ -1,0 +1,23 @@
+/* MeterDetails.css */
+
+/* Style for the meter details card */
+.meter-details-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+/* Style for the meter details content */
+.meter-details {
+  margin-top: 10px;
+}
+
+/* Style for the meter details title */
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,58 @@
+/* updatemeter.css */
+
+/* Styles for the container of the Update Meter form */
+.update-meter-form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Heading style */
+.update-meter-form-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Style for form labels and input fields */
+.update-meter-form-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.update-meter-form-container input[type="text"],
+.update-meter-form-container select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Style for checkbox input fields */
+.update-meter-form-container input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Style for the Update Meter button */
+.update-meter-form-container button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.update-meter-form-container button:hover {
+  background-color: #0056b3;
+}
+
+.update-meter-active-billing {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
